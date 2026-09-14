@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#351b10">
+<meta name="description" content="Cardápio digital da Karmel Burger Artesanal. Faça seu pedido e envie pelo WhatsApp.">
+<title>Karmel Burger Artesanal | Cardápio Digital</title>
+<link rel="icon" href="assets/logo-karmel.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="assets/logo-karmel.jpg" alt="Karmel Burger Artesanal"></a>
+  <nav>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#porcoes">Porções</a>
+    <a href="#adicionais">Adicionais</a>
+    <a href="#pedido">Meu pedido <span id="cartCount">0</span></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <span class="eyebrow">KARMEL BURGER ARTESANAL</span>
+    <h1>Seu burger.<br><span>Seu pedido.</span></h1>
+    <p>Escolha seus favoritos, monte seu carrinho e envie o pedido pronto para o WhatsApp da Karmel.</p>
+    <div class="hero-actions">
+      <a class="btn btn-red" href="#cardapio">🍔 Ver cardápio</a>
+      <a class="btn btn-outline" href="https://www.ifood.com.br/delivery/porto-seguro-ba/karmel-burger-ps-village-i/1f4bba3f-7851-4b76-83f6-c701a88dc49c?UTM_Medium=share" target="_blank" rel="noopener">🛵 Pedir pelo iFood</a>
+    </div>
+  </div>
+  <div class="hero-logo"><img src="assets/logo-karmel.jpg" alt="Logo Karmel Burger"></div>
+</section>
+
+<section class="section" id="cardapio">
+  <div class="section-title">
+    <span class="title-icon">🍔</span>
+    <div><small>HAMBÚRGUERES</small><h2>Escolha o seu</h2></div>
+  </div>
+  <div id="burgers" class="product-grid"></div>
+</section>
+
+<section class="section cream" id="porcoes">
+  <div class="section-title">
+    <span class="title-icon">🍟</span>
+    <div><small>ACOMPANHAMENTOS</small><h2>Porções</h2></div>
+  </div>
+  <div id="portions" class="simple-grid"></div>
+</section>
+
+<section class="section" id="adicionais">
+  <div class="section-title">
+    <span class="title-icon">➕</span>
+    <div><small>PERSONALIZE</small><h2>Adicionais</h2></div>
+  </div>
+  <div id="addons" class="addon-grid"></div>
+  <div class="kids-card">
+    <div><div class="kids-icon">👧🧒</div><h3>Combo Kids</h3>
+      <p>Mini pão de hambúrguer · carne industrial · alface · queijo derretido · mini refrigerante · mini porção de batata frita</p>
+    </div>
+    <div class="kids-buy"><strong>R$ 19,00</strong><button class="btn btn-dark" onclick="addItem('Combo Kids',19)">Adicionar</button></div>
+  </div>
+</section>
+
+<section class="checkout" id="pedido">
+  <div class="checkout-wrap">
+    <div class="order-summary">
+      <span class="eyebrow dark">📲 FINALIZAR PEDIDO</span>
+      <h2>Meu pedido</h2>
+      <div id="cart" class="empty">Seu carrinho está vazio.<br>Escolha os itens acima para começar.</div>
+      <div class="total-row"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+    </div>
+
+    <form id="orderForm" class="order-form">
+      <h3>Dados do pedido</h3>
+      <label>Nome
+        <input id="name" required autocomplete="name" placeholder="Como podemos te chamar?">
+      </label>
+      <label>Tipo de pedido
+        <select id="type">
+          <option value="Entrega">🛵 Entrega</option>
+          <option value="Retirada">🏪 Retirada no local</option>
+        </select>
+      </label>
+      <label id="addressLabel">Endereço para entrega
+        <textarea id="address" rows="3" placeholder="Rua, número, bairro e complemento"></textarea>
+      </label>
+      <label>Pagamento
+        <select id="payment">
+          <option>Pix</option>
+          <option>Dinheiro</option>
+          <option>Cartão</option>
+        </select>
+      </label>
+      <label>Observações
+        <textarea id="notes" rows="3" placeholder="Ex.: sem cebola, ponto da carne..."></textarea>
+      </label>
+      <button class="btn btn-red full" type="submit">Enviar pedido pelo WhatsApp</button>
+      <p class="form-note">O WhatsApp abrirá com o pedido já preenchido. Confira e toque em enviar.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact-strip">
+  <div><strong>Karmel Burger Artesanal</strong><span>Porto Seguro · Bahia</span></div>
+  <div class="contact-links">
+    <a href="https://wa.me/5573999184458" target="_blank" rel="noopener">📲 WhatsApp</a>
+    <a href="https://www.instagram.com/karmelburger/" target="_blank" rel="noopener">📸 Instagram</a>
+    <a href="https://www.ifood.com.br/delivery/porto-seguro-ba/karmel-burger-ps-village-i/1f4bba3f-7851-4b76-83f6-c701a88dc49c?UTM_Medium=share" target="_blank" rel="noopener">🛵 iFood</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo-karmel.jpg" alt="Karmel Burger">
+  <p>© 2026 Karmel Burger Artesanal · Porto Seguro - BA</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
