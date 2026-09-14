@@ -1,16 +1,16 @@
 const WHATSAPP_PHONE='5573999184458';
 
 const burgers=[
- {n:'Xerife',p:42.90,c:59.90,img:'xerife.jpg',d:'Pão de brioche · hambúrguer artesanal de picanha · mussarela · maionese · alface americano · picles · tomate · cebola roxa'},
- {n:'Rodeio Ring',p:36.90,c:54.90,img:'rodeio-ring.jpg',d:'Pão de brioche · rúcula · hambúrguer artesanal 120g · molho especial de limão e alho · onion rings · barbecue'},
- {n:'Vaqueira',p:29.90,c:48.90,img:'vaqueira.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese da casa · alface e tomate · bacon · queijo'},
- {n:'Faroeste',p:29.90,c:48.90,img:'faroeste.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · calabresa acebolada · queijo · alface e tomate'},
- {n:'Touro Negro',p:36.90,c:54.90,img:'touro-negro.jpg',d:'Pão australiano · hambúrguer artesanal 150g · rúcula · cebola caramelizada · cheddar da casa · barbecue'},
- {n:'Bala no Alvo',p:21.90,c:37.90,img:'bala-no-alvo.jpg',d:'Pão de brioche · hambúrguer artesanal 80g · queijo · alface · tomate · maionese'},
- {n:'Dallas',p:28.90,c:46.90,img:'dallas.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · queijo gratinado · cheddar · calabresa moída'},
- {n:'Cowboy Burguer',p:38.90,c:56.90,img:'cowboy-burguer.jpg',d:'Pão de brioche · hambúrguer artesanal 120g · maionese · ovo · alface · tomate · queijo · calabresa acebolada · cheddar · bacon'},
- {n:'Touro Furioso',p:46.90,c:64.90,img:'touro-furioso.jpg',d:'Pão de brioche · 2 hambúrgueres artesanais de 100g · maionese · duplo cheddar · bacon · alho frito · tomate · alface · molho apimentado'},
- {n:'Velho Oeste',p:27.90,c:45.90,img:'velho-oeste.jpg',d:'Pão australiano · hambúrguer de frango empanado · alface crocante · molho branco de queijos'}
+ {n:'Xerife',p:42.90,c:59.90,img:'./xerife.jpg',d:'Pão de brioche · hambúrguer artesanal de picanha · mussarela · maionese · alface americano · picles · tomate · cebola roxa'},
+ {n:'Rodeio Ring',p:36.90,c:54.90,img:'./rodeio-ring.jpg',d:'Pão de brioche · rúcula · hambúrguer artesanal 120g · molho especial de limão e alho · onion rings · barbecue'},
+ {n:'Vaqueira',p:29.90,c:48.90,img:'./vaqueira.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese da casa · alface e tomate · bacon · queijo'},
+ {n:'Faroeste',p:29.90,c:48.90,img:'./faroeste.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · calabresa acebolada · queijo · alface e tomate'},
+ {n:'Touro Negro',p:36.90,c:54.90,img:'./touro-negro.jpg',d:'Pão australiano · hambúrguer artesanal 150g · rúcula · cebola caramelizada · cheddar da casa · barbecue'},
+ {n:'Bala no Alvo',p:21.90,c:37.90,img:'./bala-no-alvo.jpg',d:'Pão de brioche · hambúrguer artesanal 80g · queijo · alface · tomate · maionese'},
+ {n:'Dallas',p:28.90,c:46.90,img:'./dallas.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · queijo gratinado · cheddar · calabresa moída'},
+ {n:'Cowboy Burguer',p:38.90,c:56.90,img:'./cowboy-burguer.jpg',d:'Pão de brioche · hambúrguer artesanal 120g · maionese · ovo · alface · tomate · queijo · calabresa acebolada · cheddar · bacon'},
+ {n:'Touro Furioso',p:46.90,c:64.90,img:'./touro-furioso.jpg',d:'Pão de brioche · 2 hambúrgueres artesanais de 100g · maionese · duplo cheddar · bacon · alho frito · tomate · alface · molho apimentado'},
+ {n:'Velho Oeste',p:27.90,c:45.90,img:'./velho-oeste.jpg',d:'Pão australiano · hambúrguer de frango empanado · alface crocante · molho branco de queijos'}
 ];
 const portions=[
  ['Onion Rings 200g',16],['Onion Rings 350g',22],
@@ -32,7 +32,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 function render(){
  document.getElementById('burgers').innerHTML=burgers.map((x,i)=>`
  <article class="product">
-  <img class="product-photo" src="${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
+  <img class="product-photo" src="./${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
   <div class="product-body">
    <h3>${esc(x.n)}</h3><p class="product-desc">${esc(x.d)}</p>
    <div class="buy-row">
