@@ -32,7 +32,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 function render(){
  document.getElementById('burgers').innerHTML=burgers.map((x,i)=>`
  <article class="product">
-  <img class="product-photo" src="assets/${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
+  <img class="product-photo" src="${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
   <div class="product-body">
    <h3>${esc(x.n)}</h3><p class="product-desc">${esc(x.d)}</p>
    <div class="buy-row">
