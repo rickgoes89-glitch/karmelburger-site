@@ -10,7 +10,8 @@ const burgers=[
  {n:'Dallas',p:28.90,c:46.90,img:'./dallas.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · queijo gratinado · cheddar · calabresa moída'},
  {n:'Cowboy Burguer',p:38.90,c:56.90,img:'./cowboy-burguer.jpg',d:'Pão de brioche · hambúrguer artesanal 120g · maionese · ovo · alface · tomate · queijo · calabresa acebolada · cheddar · bacon'},
  {n:'Touro Furioso',p:46.90,c:64.90,img:'./touro-furioso.jpg',d:'Pão de brioche · 2 hambúrgueres artesanais de 100g · maionese · duplo cheddar · bacon · alho frito · tomate · alface · molho apimentado'},
- {n:'Velho Oeste',p:27.90,c:45.90,img:'./velho-oeste.jpg',d:'Pão australiano · hambúrguer de frango empanado · alface crocante · molho branco de queijos'}
+ {n:'Velho Oeste',p:27.90,c:45.90,img:'./velho-oeste.jpg',d:'Pão australiano · hambúrguer de frango empanado · alface crocante · molho branco de queijos'},
+ {n:'Boi Bandido',p:48.90,c:65.90,img:'./boi-bandido.jpeg',d:'Pão de brioche selado na manteiga · maionese · hambúrguer artesanal de 100g · brócolis · bacon · generoso queijo derretido'}
 ];
 const portions=[
  ['Onion Rings 200g',16],['Onion Rings 350g',22],
@@ -32,7 +33,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 function render(){
  document.getElementById('burgers').innerHTML=burgers.map((x,i)=>`
  <article class="product">
-  <img class="product-photo" src="./${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
+  <img class="product-photo" src="${x.img}" alt="${esc(x.n)} da Karmel Burger" loading="lazy">
   <div class="product-body">
    <h3>${esc(x.n)}</h3><p class="product-desc">${esc(x.d)}</p>
    <div class="buy-row">
