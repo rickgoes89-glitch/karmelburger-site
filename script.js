@@ -2,16 +2,16 @@ const WHATSAPP_PHONE='5573999184458';
 
 const burgers=[
  {n:'Xerife',p:42.90,c:59.90,img:'./xerife.jpg',d:'Pão de brioche · hambúrguer artesanal de picanha · mussarela · maionese · alface americano · picles · tomate · cebola roxa'},
- {n:'Rodeio Ring',p:36.90,c:54.90,img:'./rodeio-ring.jpg',d:'Pão de brioche · rúcula · hambúrguer artesanal 120g · molho especial de limão e alho · onion rings · barbecue'},
- {n:'Vaqueira',p:29.90,c:48.90,img:'./vaqueira.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese da casa · alface e tomate · bacon · queijo'},
+ {n:'Rodeio Ring',p:33.90,c:51.90,img:'./rodeio-ring.jpg',d:'Pão de brioche · rúcula · hambúrguer artesanal 100g · molho especial de limão e alho · onion rings · barbecue'},
+ {n:'Vaqueira',p:33.90,c:52.90,img:'./vaqueira.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese da casa · alface e tomate · bacon · queijo'},
  {n:'Faroeste',p:29.90,c:48.90,img:'./faroeste.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · calabresa acebolada · queijo · alface e tomate'},
  {n:'Touro Negro',p:36.90,c:54.90,img:'./touro-negro.jpg',d:'Pão australiano · hambúrguer artesanal 150g · rúcula · cebola caramelizada · cheddar da casa · barbecue'},
- {n:'Bala no Alvo',p:21.90,c:37.90,img:'./bala-no-alvo.jpg',d:'Pão de brioche · hambúrguer artesanal 80g · queijo · alface · tomate · maionese'},
+ {n:'Bala no Alvo',p:22.90,c:38.90,img:'./bala-no-alvo.jpg',d:'Pão de brioche · hambúrguer artesanal 80g · queijo · alface · tomate · maionese'},
  {n:'Dallas',p:28.90,c:46.90,img:'./dallas.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · queijo gratinado · cheddar · calabresa moída'},
  {n:'Cowboy Burguer',p:38.90,c:56.90,img:'./cowboy-burguer.jpg',d:'Pão de brioche · hambúrguer artesanal 120g · maionese · ovo · alface · tomate · queijo · calabresa acebolada · cheddar · bacon'},
  {n:'Touro Furioso',p:46.90,c:64.90,img:'./touro-furioso.jpg',d:'Pão de brioche · 2 hambúrgueres artesanais de 100g · maionese · duplo cheddar · bacon · alho frito · tomate · alface · molho apimentado'},
  {n:'Velho Oeste',p:27.90,c:45.90,img:'./velho-oeste.jpg',d:'Pão australiano · hambúrguer de frango empanado · alface crocante · molho branco de queijos'},
- {n:'Boi Bandido',p:48.90,c:65.90,img:'./boi-bandido.jpeg',d:'Pão de brioche selado na manteiga · maionese · hambúrguer artesanal de 100g · brócolis · bacon · generoso queijo derretido'}
+ {n:'Boi Bandido',p:45.90,c:62.90,img:'./boi-bandido.jpeg',d:'Pão de brioche selado na manteiga · maionese · hambúrguer artesanal de 100g · brócolis · bacon · generoso queijo derretido'}
 ];
 const portions=[
  ['Onion Rings 200g',16],['Onion Rings 350g',22],

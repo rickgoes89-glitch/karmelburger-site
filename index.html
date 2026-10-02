@@ -6,15 +6,15 @@
 <meta name="theme-color" content="#351b10">
 <meta name="description" content="Cardápio digital da Karmel Burger Artesanal. Faça seu pedido e envie pelo WhatsApp.">
 <title>Karmel Burger Artesanal | Cardápio Digital</title>
-<link rel="icon" href="logo-karmel.jpg">
+<link rel="icon" href="./logo-karmel.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#inicio"><img src="logo-karmel.jpg" alt="Karmel Burger Artesanal"></a>
+  <a class="brand" href="#inicio"><img src="./logo-karmel.jpg" alt="Karmel Burger Artesanal"></a>
   <nav>
     <a href="#cardapio">Cardápio</a>
     <a href="#porcoes">Porções</a>
@@ -34,7 +34,7 @@
       <a class="btn btn-outline" href="https://www.ifood.com.br/delivery/porto-seguro-ba/karmel-burger-ps-village-i/1f4bba3f-7851-4b76-83f6-c701a88dc49c?UTM_Medium=share" target="_blank" rel="noopener">🛵 Pedir pelo iFood</a>
     </div>
   </div>
-  <div class="hero-logo"><img src="logo-karmel.jpg" alt="Logo Karmel Burger"></div>
+  <div class="hero-logo"><img src="./logo-karmel.jpg" alt="Logo Karmel Burger"></div>
 </section>
 
 <section class="section" id="cardapio">
@@ -60,8 +60,9 @@
   </div>
   <div id="addons" class="addon-grid"></div>
   <div class="kids-card">
-    <div><div class="kids-icon">👧🧒</div><h3>Combo Kids</h3>
-      <p>Mini pão de hambúrguer · carne industrial · alface · queijo derretido · mini refrigerante · mini porção de batata frita</p>
+    <img class="kids-photo" src="./combo-kids.jpeg" alt="Combo Kids da Karmel Burger" loading="lazy">
+    <div class="kids-info"><div class="kids-icon">👧🧒</div><h3>Combo Kids</h3>
+      <p>Mini pão de hambúrguer · carne industrial · alface · queijo derretido · mini refrigerante · mini porção de batata frita · lembrança infantil</p>
     </div>
     <div class="kids-buy"><strong>R$ 19,00</strong><button class="btn btn-dark" onclick="addItem('Combo Kids',19)">Adicionar</button></div>
   </div>
@@ -117,7 +118,7 @@
 </main>
 
 <footer>
-  <img src="logo-karmel.jpg" alt="Karmel Burger">
+  <img src="./logo-karmel.jpg" alt="Karmel Burger">
   <p>© 2026 Karmel Burger Artesanal · Porto Seguro - BA</p>
 </footer>
 
