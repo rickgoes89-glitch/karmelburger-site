@@ -1,7 +1,7 @@
-const WHATSAPP_PHONE='5573999184458';
+const WHATSAPP_PHONE='5573999510922';
 
 const burgers=[
- {n:'Xerife',p:42.90,c:59.90,img:'./xerife.jpg',d:'Pão de brioche · hambúrguer artesanal de picanha · mussarela · maionese · alface americano · picles · tomate · cebola roxa'},
+ {n:'Xerife',p:36.90,c:54.90,img:'./xerife.jpg',d:'Pão de brioche · hambúrguer artesanal de 120g · mussarela · maionese · alface americano · picles · tomate · cebola roxa'},
  {n:'Rodeio Ring',p:33.90,c:51.90,img:'./rodeio-ring.jpg',d:'Pão de brioche · rúcula · hambúrguer artesanal 100g · molho especial de limão e alho · onion rings · barbecue'},
  {n:'Vaqueira',p:33.90,c:52.90,img:'./vaqueira.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese da casa · alface e tomate · bacon · queijo'},
  {n:'Faroeste',p:29.90,c:48.90,img:'./faroeste.jpg',d:'Pão de brioche · hambúrguer artesanal 100g · maionese · calabresa acebolada · queijo · alface e tomate'},
